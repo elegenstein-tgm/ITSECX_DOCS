@@ -20,15 +20,18 @@ Technologien
 - Komoponente (nur in der finalen Version)
 
 		Quellcodedoku; Usermanual
+
 Komponente
 =============
 - Nmap 
 - tcpdump
 - ssh
 - sftp
+
 IDEs
 ====
 - Visual Studios
+
 Programmmiersprachen
 ====================
 - Java
@@ -36,6 +39,7 @@ Programmmiersprachen
 - c
 - c#
 - systemd
+
 Externe Mangagement Tools
 -------------------------
 - Taiga.io
