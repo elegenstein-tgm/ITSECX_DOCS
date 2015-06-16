@@ -23,7 +23,7 @@ Technologien
 
 Komponente
 =============
-- Nmap 
+- ~~Nmap~~ 
 - tcpdump
 - ssh
 - sftp
