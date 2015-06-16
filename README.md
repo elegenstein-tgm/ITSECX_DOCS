@@ -3,11 +3,6 @@
 Todo
 ====
 
-Userstories
------------
-- Dokumentieren 
-- Points vergabe
-
 Sprint
 ------
 - Sprintdaten
@@ -22,18 +17,18 @@ Technologien
 		Quellcodedoku; Usermanual
 
 Komponente
-=============
+----------
 - ~~Nmap~~ 
 - tcpdump
 - ssh
 - sftp
 
 IDEs
-====
+----
 - Visual Studios
 
 Programmmiersprachen
-====================
+--------------------
 - Java
 - vc++
 - c
@@ -45,5 +40,8 @@ Externe Mangagement Tools
 - Taiga.io
 - Github
 		
-
+~~Userstories~~
+-----------
+- ~~Dokumentieren~~
+- ~~Points vergabe~~
 		
