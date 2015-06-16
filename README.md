@@ -3,6 +3,10 @@
 Todo
 ====
 
+Retospektiven
+-------------
+
+
 Sprint
 ------
 - Sprintdaten
@@ -10,11 +14,13 @@ Sprint
 
 Technologien
 ------------
+- Design Dukumentation
 - Vergleiche der Programmiersprachen
 - IDE vergleichen
 - Komoponente (nur in der finalen Version)
 
-		Quellcodedoku; Usermanual
+		Quellcodedoku; Usermanual; Burndownchart;
+		Abnahmeprotokoll?
 
 Komponente
 ----------
