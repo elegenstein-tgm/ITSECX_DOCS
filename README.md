@@ -25,8 +25,8 @@ Technologien
 Komponente
 ----------
 - ~~Nmap~~ 
-- tcpdump
-- ssh
+- ~~tcpdump~~
+- ~~ssh~~
 - sftp
 
 IDEs
