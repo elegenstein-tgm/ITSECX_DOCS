@@ -27,7 +27,7 @@ Komponente
 - ~~Nmap~~ 
 - ~~tcpdump~~
 - ~~ssh~~
-- sftp
+- sftp (angefangen)
 
 IDEs
 ----
