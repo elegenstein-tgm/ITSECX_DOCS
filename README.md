@@ -13,10 +13,10 @@ Retospektiven
 -------------
 
 
-Sprint
+~~Sprint~~
 ------
-- Sprintdaten
-- und kommentare
+- ~~Sprintdaten~~
+- ~~und kommentare~~
 
 Technologien
 ------------
@@ -49,8 +49,8 @@ Programmmiersprachen
 
 Externe Mangagement Tools
 -------------------------
-- Taiga.io
-- Github
+- ~~Taiga.io~~
+- ~~Github~~
 		
 ~~Userstories~~
 -----------
