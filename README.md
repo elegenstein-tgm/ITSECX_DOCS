@@ -12,12 +12,6 @@ In Bearbeitung
 Retospektiven
 -------------
 
-
-~~Sprint~~
-------
-- ~~Sprintdaten~~
-- ~~und kommentare~~
-
 Technologien
 ------------
 - Design Dukumentation
@@ -27,13 +21,6 @@ Technologien
 
 		Quellcodedoku; Usermanual; Burndownchart;
 		Abnahmeprotokoll?
-
-Komponente
-----------
-- ~~Nmap~~ 
-- ~~tcpdump~~
-- ~~ssh~~
-- sftp (angefangen)
 
 IDEs
 ----
@@ -46,6 +33,18 @@ Programmmiersprachen
 - c
 - c#
 - systemd
+
+Komponente
+----------
+- sftp (angefangen)
+- ~~Nmap~~ 
+- ~~tcpdump~~
+- ~~ssh~~
+
+~~Sprint~~
+------
+- ~~Sprintdaten~~
+- ~~und kommentare~~
 
 ~~Externe Mangagement Tools~~
 -------------------------
