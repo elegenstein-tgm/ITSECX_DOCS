@@ -7,6 +7,7 @@ In Bearbeitung
 --------------
 - User Manual
 - Sprints
+- sftp
 
 Retospektiven
 -------------
