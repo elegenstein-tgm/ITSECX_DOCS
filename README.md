@@ -47,7 +47,7 @@ Programmmiersprachen
 - c#
 - systemd
 
-Externe Mangagement Tools
+~~Externe Mangagement Tools~~
 -------------------------
 - ~~Taiga.io~~
 - ~~Github~~
