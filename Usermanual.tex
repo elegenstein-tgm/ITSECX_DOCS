@@ -30,14 +30,19 @@
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 \usepackage{ulem}  % Strikeout with sout
+\usepackage{tabularx}
+\usepackage{color}
 % These packages are all incorporated in the memoir class to one degree or another...
 
 %%% HEADERS & FOOTERS
-\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
-\pagestyle{fancy} % options: empty , plain , fancy
-\renewcommand{\headrulewidth}{0pt} % customise the layout...
-\lhead{}\chead{}\rhead{}
-\lfoot{}\cfoot{\thepage}\rfoot{}
+ \usepackage{lastpage}
+ \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+ \pagestyle{fancy} % options: empty , plain , fancy
+%\usepackage[automark]{scrpage2}
+%\pagestyle{scrheadings}
+\renewcommand{\headrulewidth}{1pt} % customise the layout...
+\lhead{User Manual ITSecX}\chead{}\rhead{18.05.2015}
+\lfoot{v 1.0.1}\cfoot{}\rfoot{\thepage of \pageref{LastPage}}
 
 %%% SECTION TITLE APPEARANCE
 \usepackage{sectsty}
@@ -56,12 +61,36 @@
 
 \title{Usermanual for ITSecX}
 \author{Erik Brändli}
-%\date{18/05/2015} % Activate to display a given date or no date (if empty),
+%\date{18.05.2015} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
 \begin{document}
 \maketitle
 
+\begin{tabular}{||l|l|l|l|l|}
+	\hline
+	\textbf{Version} & \textbf{Name} & \textbf{Datum} & \textbf{Status} & \textbf{Unterschrift} \\
+	\hline
+	\hline
+	v 1.0.1us & Erik & \date{18.06.2015} & \color{red}{unstable} &  \\
+\hline
+	v 1.0.1ps & Erik & \date{18.06.2015} & \color{red}{pretty-stable} &  \\
+\hline
+	v 1.0.1s & Erik & \date{19.06.2015} & \color{red}{stable} &  \\
+\hline
+	v 1.0.1 & Hüseyin Bozkurt & \date{21.06.2015} & \color{green}{\textbf{Freigeben}} &  \\
+	\hline
+\end{tabular}
+
+
+
+
+\pagebreak
+\section{Inhaltsverzeichnis}
+\tableofcontents
+
+
+\pagebreak
 \section{Einleitung}
 
 EditierenITSecX ist die Abkürzung für "IT - Security - Extreme". ITSecX lässt sich mit dem von uns zur Verfügung gestellten Devices verbinden.\\
@@ -98,7 +127,7 @@ Projektabnehmer:
 
 Folgende Personen verdienenen Anerkennung dafür, dass Sie wesentlichen Inhalt zum Handbuch beigetragen haben und/oder weiterhin beitragen werden: Hüsyein Bozkurt und Erik Brändli.
 
-Vielen Dank!
+Vielen Dank!\\
 
 \subsection{Einsatzgebiet}
 
@@ -125,6 +154,69 @@ Um das Produkt zu verwenden erwerben Sie am besten unser "Arch Linux" von unsere
 Falls Sie nicht unser modifiziertes "Arch Linux" verwenden müssen Sie sich einen Service schreiben welches einen tcpdump startet auf einem von Ihnen ausgewählten Interface startet. Dieser Dump muss in eine Datei geschrieben werden, wie dies funktioniert finden sie auf der Seite von tcpdump.(http://www.tcpdump.org/)\\
 
 \subsection{Erweiterungen}
-Es sollte sich der Tcpdump bei Systemstart starten
+
+Um folgende Dinge müssen Sie sich kümmern:
+
+-) Es sollte sich der Tcpdump bei Systemstart von alleine starten.
+
+-) Sudo befehl muss ohne Passwort erfolgen
+
+\section{Installation des Produktes}
+
+Führen Sie den gelieferten Installer aus um die Software zu installlieren.\\
+AxNetworks ist eine wichtige externe Komponente, damit die Software auf dem Windowsgerät läuft.
+Nach erfolgreicher Installation ist das Produkt voll einsatzbereit.\\
+
+\section{Inbetriebnahme}
+
+\pagebreak
+\section{Funktionen}
+In diesem Kapitel werden die Funktionen der Gui erklärt bezüglich ihrer Anwendung und Auswirkung \\
+\subsection{Datei}
+\subsubsection{IP Settings}
+In "\textbf{IP Settings}" lässt sich festlegen zu welchem Device man sich verbinden möchte.\\
+Man findet zwei maskierte Eingabefelder wieder. Das Eingabefeld mit IP-Address nimmt die IP-Adresse(v4) vom Device entgegen und validiert ob diese IP korrekt ist. Das Feld nimmt eine bis zu 4 stellige Zahl zur Definierung des Kommunikationis-Port am Device.\\
+Mit dem Knopf "\textbf{Apply Settings}" können Sie die Einstellungen übernehmen. "Discard Settings" verwirft die temporäre Konfiguration.\\
+\subsubsection{Import $\rightarrow$ Settings}
+Ermöglicht das Importieren von Konfigurationen bezüglich: 
+
+-) \textbf{Verbindung-Punkt (IP:Port)}
+
+-) \textbf{Authentifizierung (Username, Passwort)}\\
+Ein OpenFile Dialog öffnet sich und bittet Sie darum eine Datei auszuwählen, eine \textbf{.conf} Datei (Die Sie mit unserer Software erstellten, siehe auch Kapitel \ref{sec:FFES})
+Desweitern wird die Verbindung sofort getestet um zu überprüfen ob die übergebenen Daten korrekt sind, und das Device verfügbar ist.
+\textbf{Dies kann in gewissen Fällen länger dauern}.\\
+\subsubsection{Export $\rightarrow$ Settings}
+\label{sec:FFES}
+Ermöglicht das Exportieren von Konfigurationen bezüglich: 
+
+-) \textbf{Verbindung-Punkt (IP:Port)}
+
+-) \textbf{Authentifizierung (Username, Passwort)}
+
+-) Interface-Settings (Schriftfarbe, Hintergrundfarbe, \dots )\\
+Desweitern wird empfohlen eine Setting erst dann zu exportieren wenn die Verbindung bereits getestet wurde.
+\textbf{Diese Datei enthält sensible Daten bitte schützen Sie sich selbst, indem Sie diese Datei schützen}\\
+\subsubsection{Verbindung $\rightarrow$ verbinden}
+Über diesen Menupunkt verbindet man sich zum Device, dafür ist jedoch erforderlich, dass Sie Ihre Daten in die Felder "Username" \& "Passwort" eintragen.\
+Danach bestätigen Sie Ihre Eingabe mit dem Button "\textbf{Apply + Login}", durch das klicken auf den Button probiert das Programm sich zu dem Device zu verbinden.\\
+\subsubsection{Verbindung $\rightarrow$ trennen}
+Mit der Funktion trennen lässt sich die Kommunizierschnittstelle zurücksetzen, folglich sind Sie vom Device getrennt.\\
+\subsection{Tools}
+\subsubsection{IP Settings}
+\subsubsection{Import $\rightarrow$ Settings}
+
+\subsection{Files}
+\subsubsection{IP Settings}
+\subsubsection{Import $\rightarrow$ Settings}
+
+\subsection{Window}
+\subsubsection{IP Settings}
+\subsubsection{Import $\rightarrow$ Settings}
+
+\section{Schritt-für-Schritt Beispiel}
+
+\section{Rechtliche Hinweise}
+
 
 \end{document}
