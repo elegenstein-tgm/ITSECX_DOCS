@@ -177,6 +177,7 @@ In diesem Kapitel werden die Funktionen der Gui erklärt bezüglich ihrer Anwend
 In "\textbf{IP Settings}" lässt sich festlegen zu welchem Device man sich verbinden möchte.\\
 Man findet zwei maskierte Eingabefelder wieder. Das Eingabefeld mit IP-Address nimmt die IP-Adresse(v4) vom Device entgegen und validiert ob diese IP korrekt ist. Das Feld nimmt eine bis zu 4 stellige Zahl zur Definierung des Kommunikationis-Port am Device.\\
 Mit dem Knopf "\textbf{Apply Settings}" können Sie die Einstellungen übernehmen. "Discard Settings" verwirft die temporäre Konfiguration.\\
+\color{green}{\textbf{Bild}}\color{black}
 \subsubsection{Import $\rightarrow$ Settings}
 \label{sec:FFIS}
 Ermöglicht das Importieren von Konfigurationen bezüglich: 
@@ -201,8 +202,10 @@ Desweitern wird empfohlen eine Setting erst dann zu exportieren wenn die Verbind
 \subsubsection{Verbindung $\rightarrow$ verbinden}
 Über diesen Menupunkt verbindet man sich zum Device, dafür ist jedoch erforderlich, dass Sie Ihre Daten in die Felder "Username" \& "Passwort" eintragen.\
 Danach bestätigen Sie Ihre Eingabe mit dem Button "\textbf{Apply + Login}", durch das klicken auf den Button probiert das Programm sich zu dem Device zu verbinden.\\
+\color{green}{\textbf{Bild}}\color{black}
 \subsubsection{Verbindung $\rightarrow$ trennen}
 Mit der Funktion trennen lässt sich die Kommunizierschnittstelle zurücksetzen, folglich sind Sie vom Device getrennt. um sich erneut zu verbinden müssen Sie alle Settings neu eingeben, oder Sie laden eine Konfiguration über Import $\rightarrow$ Settings (\ref{sec:FFIS}) \\
+\pagebreak
 \subsection{Tools}
 Hier befinden sich jene Tools die das Device ausführen kann, Konfigurationen für diese Tools werden automatisch geladen bzw. in einem Fenster für Sie bereit gestellt, dass sie nur mehr auswählen müssen wer \& was.\\
 \subsubsection{Scanner $\rightarrow$ nmap}
@@ -216,22 +219,43 @@ nmap ("Network Mapper") ist ein Tool womit Sie einen fremden Computer:
 
 -) wie weit dieser Computer entfernt ist
 Hier bei ist nicht die Rede von wie viele Meter ist dieser Computer weg, sondern wieviele netzwerktechnische zwischen Punkte es gibt.\\
- 
+ \color{green}{\textbf{Bild}}\color{black}
 \subsubsection{Sniffing $\rightarrow$ tcpdump $\rightarrow$ start/stop}
 tcpdump legt die Netwerkpakete in einem Logfile(\textbf{.pcap}) ab. \\
 Mit der Funktion \textbf{start} wird der "Dump" in eine Datei geschrieben.
 
-%\textbf{!} Sollte es bereits gestartet sein wird dieser neugestartet. 
-\subsubsection{Import $\rightarrow$ Settings
-
+\textbf{!} Sollte es bereits gestartet sein, wird dieser neugestartet.\\
+Mit der Funktion \textbf{stop} wird der "Dump" angehalten. \\
+\color{green}{\textbf{Bild}}\color{black}
+\subsubsection{Direct Command}
+Über diese Funktion ist es möglich einen Befehl am Device auszuführen, denn evtl. möchten Sie selbst etwas auslesen oder umstellen.\\
+\color{green}{\textbf{Bild}}\color{black}
+\pagebreak
 \subsection{Files}
-\subsubsection{IP Settings}
-\subsubsection{Import $\rightarrow$ Settings}
-
+Mit den Funktionen in diesem Menü können Sie mit den Logs und Datein arbeiten, also diese Anzeigen und herunterladen.\\
+\subsubsection{View File}
+Hier können Sie in dem Sie die auf der linken seite eine Datei auswählen diese anzeigen.\\
+\color{green}{\textbf{Bild}}\color{black}
+\\
+\subsubsection{View tcpdump}
+Wenn Sie diese Aktion ausführen wird der aktuelle tcpdump im Hauptfenster ausgegeben.\
+\textbf{Da diese Daten erst konvertiert werden müssen kann dies eine gewisse Zeit in anspruch nehmen!}
+\color{green}{\textbf{Bild}}\color{black}
+\\
+\subsubsection{View tcpdump $\rightarrow$ Download}
+Sollten Sie diese Funktion auswählen kommt ein "speichern unter" Dialog diesen müssen Sie bestätigen, dann wird der aktuelle tcpdump an dieser Stelle gespeichtert.
+\color{green}{\textbf{Bild}}\color{black}
+\\
+\pagebreak
 \subsection{Window}
-\subsubsection{IP Settings}
-\subsubsection{Import $\rightarrow$ Settings}
-
+In diesem Menüpunkt können Sie den angezeigten Ausgabetext optisch bearbeiten.\\
+\color{green}{\textbf{Bild}}\color{black}
+\subsubsection{Set Fontcolor}
+Hier können Sie die Textfarbe wählen.\\
+\subsubsection{Set bgcolor}
+Hier können Sie die Hintergrundfarbe wählen
+\subsubsection{Clear}
+Mit dieser Funktion leeren Sie die Ausgabe im Hauptfenster
 \section{Schritt-für-Schritt Beispiel}
 
 \section{Rechtliche Hinweise}
