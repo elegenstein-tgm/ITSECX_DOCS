@@ -5,7 +5,6 @@ Todo
 
 In Bearbeitung
 --------------
-- User Manual
 - Sprints
 - sftp
 
@@ -15,24 +14,18 @@ Retospektiven
 Technologien
 ------------
 - Design Dukumentation
+- ~~Usermanual~~
 - Vergleiche der Programmiersprachen
 - IDE vergleichen
 - Komoponente (nur in der finalen Version)
 
-		Quellcodedoku; Usermanual; Burndownchart;
+		Quellcodedoku; Burndownchart;
 		Abnahmeprotokoll?
 
 IDEs
 ----
 - Visual Studios
 
-Programmmiersprachen
---------------------
-- Java
-- vc++
-- c
-- c#
-- systemd
 
 Komponente
 ----------
