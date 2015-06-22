@@ -61,7 +61,7 @@
 
 \title{Usermanual for ITSecX}
 \author{Erik Brändli}
-%\date{18.05.2015} % Activate to display a given date or no date (if empty),
+\date{21.05.2015} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
 \begin{document}
@@ -177,7 +177,8 @@ In diesem Kapitel werden die Funktionen der Gui erklärt bezüglich ihrer Anwend
 In "\textbf{IP Settings}" lässt sich festlegen zu welchem Device man sich verbinden möchte.\\
 Man findet zwei maskierte Eingabefelder wieder. Das Eingabefeld mit IP-Address nimmt die IP-Adresse(v4) vom Device entgegen und validiert ob diese IP korrekt ist. Das Feld nimmt eine bis zu 4 stellige Zahl zur Definierung des Kommunikationis-Port am Device.\\
 Mit dem Knopf "\textbf{Apply Settings}" können Sie die Einstellungen übernehmen. "Discard Settings" verwirft die temporäre Konfiguration.\\
-\color{green}{\textbf{Bild}}\color{black}
+%\color{green}{\textbf{Bild}}\color{black}
+\includegraphics{IP_SETTINGS}
 \subsubsection{Import $\rightarrow$ Settings}
 \label{sec:FFIS}
 Ermöglicht das Importieren von Konfigurationen bezüglich: 
@@ -202,7 +203,8 @@ Desweitern wird empfohlen eine Setting erst dann zu exportieren wenn die Verbind
 \subsubsection{Verbindung $\rightarrow$ verbinden}
 Über diesen Menupunkt verbindet man sich zum Device, dafür ist jedoch erforderlich, dass Sie Ihre Daten in die Felder "Username" \& "Passwort" eintragen.\
 Danach bestätigen Sie Ihre Eingabe mit dem Button "\textbf{Apply + Login}", durch das klicken auf den Button probiert das Programm sich zu dem Device zu verbinden.\\
-\color{green}{\textbf{Bild}}\color{black}
+%\color{green}{\textbf{Bild}}\color{black}
+\includegraphics{VERBINDEN}
 \subsubsection{Verbindung $\rightarrow$ trennen}
 Mit der Funktion trennen lässt sich die Kommunizierschnittstelle zurücksetzen, folglich sind Sie vom Device getrennt. um sich erneut zu verbinden müssen Sie alle Settings neu eingeben, oder Sie laden eine Konfiguration über Import $\rightarrow$ Settings (\ref{sec:FFIS}) \\
 \pagebreak
@@ -219,46 +221,63 @@ nmap ("Network Mapper") ist ein Tool womit Sie einen fremden Computer:
 
 -) wie weit dieser Computer entfernt ist
 Hier bei ist nicht die Rede von wie viele Meter ist dieser Computer weg, sondern wieviele netzwerktechnische zwischen Punkte es gibt.\\
- \color{green}{\textbf{Bild}}\color{black}
+\includegraphics[width=0.8\textwidth]{nmap}
+% \color{green}{\textbf{Bild}}\color{black}
 \subsubsection{Sniffing $\rightarrow$ tcpdump $\rightarrow$ start/stop}
 tcpdump legt die Netwerkpakete in einem Logfile(\textbf{.pcap}) ab. \\
 Mit der Funktion \textbf{start} wird der "Dump" in eine Datei geschrieben.
 
 \textbf{!} Sollte es bereits gestartet sein, wird dieser neugestartet.\\
 Mit der Funktion \textbf{stop} wird der "Dump" angehalten. \\
-\color{green}{\textbf{Bild}}\color{black}
+%\color{green}{\textbf{Bild}}\color{black}
+\pagebreak
 \subsubsection{Direct Command}
 Über diese Funktion ist es möglich einen Befehl am Device auszuführen, denn evtl. möchten Sie selbst etwas auslesen oder umstellen.\\
-\color{green}{\textbf{Bild}}\color{black}
+%\color{green}{\textbf{Bild}}\color{black}
+\includegraphics[width=0.8\textwidth]{direct_cmd}
 \pagebreak
 \subsection{Files}
 Mit den Funktionen in diesem Menü können Sie mit den Logs und Datein arbeiten, also diese Anzeigen und herunterladen.\\
 \subsubsection{View File}
 Hier können Sie in dem Sie die auf der linken seite eine Datei auswählen diese anzeigen.\\
-\color{green}{\textbf{Bild}}\color{black}
-\\
+%\color{green}{\textbf{Bild}}\color{black}
+\includegraphics[width=0.8\textwidth]{view_file}
+\pagebreak
 \subsubsection{View tcpdump}
 Wenn Sie diese Aktion ausführen wird der aktuelle tcpdump im Hauptfenster ausgegeben.\
-\textbf{Da diese Daten erst konvertiert werden müssen kann dies eine gewisse Zeit in anspruch nehmen!}
-\color{green}{\textbf{Bild}}\color{black}
+\textbf{Da diese Daten erst konvertiert werden müssen kann dies eine gewisse Zeit in anspruch nehmen!}\\
+%\color{green}{\textbf{Bild}}\color{black}
+\includegraphics[width=0.8\textwidth]{view_tcpd}
 \\
 \subsubsection{View tcpdump $\rightarrow$ Download}
 Sollten Sie diese Funktion auswählen kommt ein "speichern unter" Dialog diesen müssen Sie bestätigen, dann wird der aktuelle tcpdump an dieser Stelle gespeichtert.
-\color{green}{\textbf{Bild}}\color{black}
+\\
+\includegraphics[width=0.8\textwidth]{tcpd}
+%\color{green}{\textbf{Bild}}\color{black}
 \\
 \pagebreak
 \subsection{Window}
 In diesem Menüpunkt können Sie den angezeigten Ausgabetext optisch bearbeiten.\\
-\color{green}{\textbf{Bild}}\color{black}
+\includegraphics[width=0.8\textwidth]{colors}
+%\color{green}{\textbf{Bild}}\color{black}
 \subsubsection{Set Fontcolor}
 Hier können Sie die Textfarbe wählen.\\
 \subsubsection{Set bgcolor}
 Hier können Sie die Hintergrundfarbe wählen
 \subsubsection{Clear}
 Mit dieser Funktion leeren Sie die Ausgabe im Hauptfenster
+\pagebreak
 \section{Schritt-für-Schritt Beispiel}
-
+\begin{center}
+\includegraphics[width=0.7\textwidth]{IP_SETTINGS}\\
+\includegraphics[width=0.7\textwidth]{VERBINDEN}\\
+\includegraphics[width=0.7\textwidth]{afterlogin}\\
+\includegraphics[width=0.7\textwidth]{bsp_nmap}\\
+\includegraphics[width=0.7\textwidth]{afternmap}\\
+\end{center}
+\pagebreak
 \section{Rechtliche Hinweise}
+
 \subsection{Haftungsausschluss}
 Die Dokumente der ITSecX enthalten Links zu externen Webseiten. 
 Die inhalte der externen Webseiten sind implementierungen und nicht
@@ -287,7 +306,7 @@ geistigen Eigentums der Marke ITSecX erteilt.
 Text, Bilder, Grafiken, Sound, Animationen und Videos sowie deren 
 Anordnung auf dem ITSecX-Produkt unterliegen dem Schutz des Urheberrechts 
 und anderer Schutzgesetze.
-
+\\
 Es wird untersagt, den Inhalt dieses Produktes oder Teile davon, 
 zu kommerziellen oder auch zu privaten Zwecken zu kopieren, 
 zu verbreiten, zu verändern, auf anderen Websites zu verwenden 
