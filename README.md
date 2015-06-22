@@ -6,7 +6,6 @@ Todo
 In Bearbeitung
 --------------
 - Sprints
-- sftp
 
 Retospektiven
 -------------
@@ -29,7 +28,7 @@ IDEs
 
 Komponente
 ----------
-- sftp (angefangen)
+- ~~sftp~~
 - ~~Nmap~~ 
 - ~~tcpdump~~
 - ~~ssh~~
